@@ -1,0 +1,79 @@
+[
+    {
+        "label": "Database",
+        "importPath": "databases",
+        "description": "databases",
+        "isExtraImport": true,
+        "detail": "databases",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "MetaData",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_URL",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "DATABASE_URL = \"sqlite:///./test.db\"\ndatabase = Database(DATABASE_URL)\nmetadata = MetaData()\nengine = create_engine(\n    DATABASE_URL, connect_args={\"check_same_thread\": False}\n)",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "database",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "database = Database(DATABASE_URL)\nmetadata = MetaData()\nengine = create_engine(\n    DATABASE_URL, connect_args={\"check_same_thread\": False}\n)",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "metadata",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "metadata = MetaData()\nengine = create_engine(\n    DATABASE_URL, connect_args={\"check_same_thread\": False}\n)",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "engine = create_engine(\n    DATABASE_URL, connect_args={\"check_same_thread\": False}\n)",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "app = FastAPI()\n@app.get(\"/\")\nasync def root():\n    return {\"name\": \"Cholora diagonsis\", \"versions\":\"1.0.0\", \"description\":\"api for cholera diagonosis in nigeria\", \"contact\":{\"name\":\"peter samuel 😎\",\"email\":\"petsamuel4@gmail.com\"}}",
+        "detail": "app.main",
+        "documentation": {}
+    }
+]
