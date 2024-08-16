@@ -1,6 +1,8 @@
 # This project uses FastAPI 
 # Author: samuel peter
-# Source: https://github.com/Petsamuel/HandyMan-Backend
+# Source: https://github.com/Petsamuel/cholera-diagnosis-Backend
+
+
 from pydantic import BaseModel, EmailStr, constr, validator, Field
 from typing import Optional, List
 from enum import Enum
@@ -26,9 +28,22 @@ class User(UserBase):
     class Config:
         form_attributes = True  # Use form_attributes for SQLAlchemy integration
 
+class AdminBase(BaseModel):
+    first_name: str
+    last_name: str
+    username: str
+    email: EmailStr  
+    phone: constr(min_length=10, max_length=15) = Field(..., pattern=r'^\+?\d{10,15}$')
 
+class AdminCreate(AdminBase):
+    user_type: Optional[UserType] = UserType.USER
+    password: str
 
+class Admin(UserBase):
+    id: int
 
+    class Config:
+        form_attributes = True
 
 
 

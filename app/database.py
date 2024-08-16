@@ -2,7 +2,7 @@ from databases import Database
 from sqlalchemy import create_engine, MetaData
 from sqlalchemy.orm import sessionmaker
 
-DATABASE_URL = "sqlite:///./test.db"
+DATABASE_URL = "sqlite:///./database.db"
 database = Database(DATABASE_URL)
 metadata = MetaData()
 
