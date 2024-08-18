@@ -105,5 +105,43 @@
     "LowUrineOutput": true,
     "OtherSymptoms": "Renal Failure",
     "Cholera": 1
+  },
+  {
+    "PatientID": 107,
+    "Age": 26,
+    "Gender": "Female",
+    "Location": "Kano",
+    "DateOnset": "2024-08-16",
+    "Diarrhea": "Moderate",
+    "Vomiting": "Occasional (1-2 times/day)",
+    "Dehydration": "Mild",
+    "MuscleCramps": "Mild",
+    "Restlessness": "Mild",
+    "Thirst": "Moderate",
+    "SunkenEyes": false,
+    "DryMouthSkin": true,
+    "ColdHandsFeet": false,
+    "LowBloodPressure": false,
+    "OtherSymptoms": "Fatigue",
+    "Cholera": 0
+  },
+  {
+    "PatientID": 109,
+    "Age": 45,
+    "Gender": "Female",
+    "Location": "Abuja",
+    "DateOnset": "2024-08-18",
+    "Diarrhea": "Mild",
+    "Vomiting": "Occasional (1-2 times/day)",
+    "Dehydration": "Mild",
+    "MuscleCramps": "Moderate",
+    "Restlessness": "None",
+    "Thirst": "Moderate",
+    "SunkenEyes": false,
+    "DryMouthSkin": true,
+    "ColdHandsFeet": false,
+    "LowBloodPressure": false,
+    "OtherSymptoms": "Headache",
+    "Cholera": 0
   }
 ]
